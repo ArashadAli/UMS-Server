@@ -1,0 +1,80 @@
+# Node modules
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Logs
+logs/
+*.log
+debug.log
+error.log
+*.pid
+*.seed
+*.pid.lock
+
+# Build output
+dist/
+build/
+.next/
+out/
+coverage/
+temp/
+tmp/
+
+# Cache files
+.cache/
+.next/cache/
+.vscode/
+.idea/
+*.swp
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+
+# Uploads folder (local storage, Cloudinary uploads handled separately)
+uploads/
+public/uploads/
+
+# Compiled files
+*.tsbuildinfo
+
+# Server files
+server/uploads/
+server/temp/
+server/logs/
+
+# If using Multer temp storage
+/tmp/
+temp/
+tmp/
+
+# Optional: ignore testing coverage
+coverage/
+
+# Ignore lock files (optional)
+package-lock.json
+yarn.lock
+
+# Ignore generated SSL certs (if any)
+*.pem
+*.key
+*.crt
+
+# Ignore deployment artifacts
+*.tar
+*.zip
+
+# Ignore Next.js static export
+out/
+
+# Ignore firebase (if used later)
+.firebase/
