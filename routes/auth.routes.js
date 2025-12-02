@@ -7,6 +7,7 @@ import logout from "../controllers/logout.controller.js";
 import { sendOTPController } from "../controllers/otp.controller.js";
 import otpExpiry from "../controllers/otpExpiry.contrller.js";
 import verifyUserWithOTP from "../controllers/verifyUserWithOTP.controller.js";
+import checkIsUserLoggedIn from "../controllers/checkIsUserLoggedIn.controller.js";
 const router = Router()
 
 router.post("/login", login);
@@ -33,5 +34,6 @@ router.post("/logout",verifyJWT,logout)
 router.get("/otp-send", verifyJWT, sendOTPController)
 router.get("/expire-otp", verifyJWT, otpExpiry)
 router.post("/otp-verification", verifyJWT, verifyUserWithOTP)
+router.get("/check-loggeduser",verifyJWT,checkIsUserLoggedIn)
 
 export default router
